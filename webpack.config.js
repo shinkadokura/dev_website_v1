@@ -64,6 +64,10 @@ module.exports = {
           from: `${path.resolve(__dirname, 'src')}/assets/img/`,
           to: `${path.resolve(__dirname, 'cms/wp-content/themes/theme_name')}/common/img/`,
         },
+        {
+          from: `${path.resolve(__dirname, 'src')}/assets/fonts/`,
+          to: `${path.resolve(__dirname, 'cms/wp-content/themes/theme_name')}/common/fonts/`,
+        },
       ],
     }),
   ],
@@ -194,6 +198,10 @@ module.exports = {
   },
 
   target: ["web", "es5"],
+
+  stats: {
+    warningsFilter: /sass-loader/,
+  },  
 
   watchOptions: {
     ignored: /node_modules/,
