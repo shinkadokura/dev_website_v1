@@ -1,0 +1,40 @@
+
+@font-face {
+  font-family: 'YakuHanJP';
+  font-display: swap;
+  src: url('../fonts/YakuHanJP/YakuHanJP-Medium.woff2') format('woff2'), url('../fonts/YakuHanJP/YakuHanJP-Medium.woff') format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'YakuHanJP';
+  font-display: swap;
+  src: url('../fonts/YakuHanJP/YakuHanJP-Bold.woff2') format('woff2'), url('../fonts/YakuHanJP/YakuHanJP-Bold.woff') format("woff");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Amiri';
+  font-display: swap;
+  src: url('../fonts/Amiri/Amiri-Bold.ttf') format("truetype");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Shippori Mincho';
+  font-display: swap;
+  src: url('../fonts/Shippori_Mincho/ShipporiMincho-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+body{
+  font-family: "Amiri", "Shippori Mincho", serif;
+  // font-family: YakuHanJP, "Noto Sans JP", serif;
+}
+
+.en {
+  font-family: 'Amiri';
+  font-weight: 700;
+}

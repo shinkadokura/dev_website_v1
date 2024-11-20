@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "variable";
+@import "reset";
+@import "fonts";
+@import "common";
+
+
+@media screen and (min-width: 769px) {
+  @import "pc";
+}
+
+@media screen and (max-width: 768px) {
+  @import "sp";
+}
+

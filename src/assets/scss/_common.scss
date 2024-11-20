@@ -1,0 +1,103 @@
+// Layout - layout.scss
+@use "variable" as vars;
+
+
+/************************************************
+    Setting
+************************************************ */
+html {
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+}
+
+// img {
+//   vertical-align: middle;
+//   max-width: 100%;
+//   height: auto;
+//   width /***/:auto;
+// }
+
+img {
+  all: unset; /* すべてのデフォルトスタイルを無効にする */
+  /* 必要であればその他のスタイルを再定義 */
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+ul {
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+*:active, *:focus {
+  outline: none;
+}
+
+
+body {
+  color: vars.$txt;
+  // background: vars.$bg_color;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  line-height: 1.875;
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+/* clear */
+.cf {
+  zoom: 1;
+}
+
+.cf, .cf:before {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed,
+.embed-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: vars.$txt;
+}
