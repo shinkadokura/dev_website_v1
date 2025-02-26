@@ -41,7 +41,16 @@ module.exports = {
             },
           },
           'postcss-loader', // PostCSS 設定
-          'sass-loader', // Sass -> CSS 変換
+          {
+            loader: 'sass-loader', // Sass -> CSS 変換
+            options: {
+              implementation: require('sass'), // Dart Sass を明示的に指定
+              sourceMap: true,
+              sassOptions: {
+                //outputStyle: 'expanded', // 圧縮しないようにする
+              },
+            },
+          },
         ],
       },
       // JS ファイルを Babel で処理
@@ -199,10 +208,12 @@ module.exports = {
 
   target: ["web", "es5"],
 
-  stats: {
-    warningsFilter: /sass-loader/,
-  },  
-
+  ignoreWarnings: [
+    {
+      module: /sass-loader/, // sass-loader に関連する警告を無視
+    },
+  ],
+  
   watchOptions: {
     ignored: /node_modules/,
   },
