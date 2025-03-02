@@ -12,6 +12,7 @@ module.exports = {
   // エントリーポイントをJSのみ指定
   entry: {
     'index.min': path.resolve(__dirname, "./src/assets/js/index.js"),
+    'sub.min': path.resolve(__dirname, "./src/assets/js/sub.js"),
   },
 
   output: {
